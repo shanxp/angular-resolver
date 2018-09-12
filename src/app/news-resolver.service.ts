@@ -15,8 +15,8 @@ export class NewsResolver implements Resolve<any> {
   public news: any = undefined;
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
-    let newsUrl = 'https://httpbin.org/postt';
-    let news = 'The sky is blue'; //Mock data to be returned by test API
+    let newsUrl = 'https://httpbin.org/post';
+    let news = 'The quick brown fox jumps over the lazy dog'; //Mock data to be returned by test API
 
     return this.http.getPost(newsUrl, news).pipe(
       map( (dataFromApi) => dataFromApi ),

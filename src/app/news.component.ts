@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'news',
   template: `
-    {{news.data}}
+    {{news}}
   `,
 })
 
